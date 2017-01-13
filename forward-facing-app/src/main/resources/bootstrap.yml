@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: forward-facing-app
+  cloud:
+    services:
+      registrationMethod: route
+security:
+  basic:
+    enabled: false

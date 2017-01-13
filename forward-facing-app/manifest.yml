@@ -1,0 +1,13 @@
+---
+applications:
+- name: forward-facing-app
+  memory: 512M
+  host: forward-facing-app
+  domain: app-url-here
+  services:
+  - App autoscaler
+  - DiscoveryServer
+  - ConfigServer
+  - Hystrix Dashboard
+  env:
+    TRUST_CERTS: api-url-here

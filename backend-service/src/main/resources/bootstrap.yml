@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: backend-service
+  cloud:
+    services:
+      registrationMethod: route
+security:
+  basic:
+    enabled: false
