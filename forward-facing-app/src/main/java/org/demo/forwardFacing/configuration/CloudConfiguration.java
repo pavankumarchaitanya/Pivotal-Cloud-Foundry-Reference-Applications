@@ -1,4 +1,4 @@
-package org.demo;
+package org.demo.forwardFacing.configuration;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -12,10 +12,13 @@ public class CloudConfiguration {
 
 	@Bean
 	@LoadBalanced
-	public RestTemplate restTemplate(){
-		RestTemplate restTemplate = new RestTemplate();
-		return restTemplate;
+	public RestTemplate loadBalancedRestTemplate() {
+		return new RestTemplate();
 	}
-	
-	
+
+	@Bean
+	public RestTemplate restTemplate() {
+		return new RestTemplate();
+	}
+
 }

@@ -7,7 +7,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableCircuitBreaker
+//@EnableCircuitBreaker
 public class Application {
 
     public static void main(String[] args) {
